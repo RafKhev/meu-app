@@ -1,0 +1,14 @@
+.PessoaContainer{
+    background-color: rgb(189, 240, 255);
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 200px;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.PessoaContent {
+    color: #222;
+    margin: 0;
+}
