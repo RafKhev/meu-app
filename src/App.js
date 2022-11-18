@@ -9,7 +9,8 @@ import "./components/Componente.js";
 //mport Form from "./components/Form";
 import Condicional from "./components/Condicional";
 import OutraLista from "./components/OutraLista";
-
+import SeuNome from "./components/SeuNome";
+import { useState } from "react";
 function App() {
   //as variaveis vao aqui
   //const name = "Clebson";
@@ -26,6 +27,8 @@ function App() {
     "Angular",
     "Abacaxi"
   ];
+
+  const [nome,setNome] = useState()
   return (
     <div className="App">
       <div>
@@ -59,6 +62,9 @@ function App() {
       <OutraLista itens={[]}/>
     */}
       </div>
+      <h1>State Lift</h1>
+      <SeuNome setNome={setNome}/>
+      {nome}
     </div>
   );
 }
