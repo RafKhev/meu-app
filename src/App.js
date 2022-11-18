@@ -8,6 +8,7 @@ import "./components/Componente.js";
 //import Evento from "./components/Evento";
 //mport Form from "./components/Form";
 import Condicional from "./components/Condicional";
+import OutraLista from "./components/OutraLista";
 
 function App() {
   //as variaveis vao aqui
@@ -19,6 +20,12 @@ function App() {
   // }
 
   //const url = "https://picsum.photos/150";
+  const meusItens = [
+    "React",
+    "Vue",
+    "Angular",
+    "Abacaxi"
+  ];
   return (
     <div className="App">
       <div>
@@ -45,10 +52,13 @@ function App() {
       <List></List>
       <Form/>
       <Evento numero="1" />
-    */}
-      </div>
       <h1>Renderização condicional</h1>
       <Condicional/>
+      <h1>Renderização de lista</h1>
+      <OutraLista itens={meusItens}/>
+      <OutraLista itens={[]}/>
+    */}
+      </div>
     </div>
   );
 }
